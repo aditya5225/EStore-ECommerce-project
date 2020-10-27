@@ -1,0 +1,174 @@
+
+
+@import 'index';
+
+
+
+.navigation {
+
+	padding: 1.5rem 1rem;
+
+	a {
+		color: black !important;
+	}
+
+	.navigation_left {
+		padding: 0rem;
+	}
+
+
+	.navigation_middle {
+
+		ul {
+			margin: 0rem auto;
+		}
+
+		li {
+			margin: 0rem 0.6rem;
+
+			&:hover a{
+				color: $red !important;
+			}
+		}
+
+
+		.dropdown-menu {
+			display: none;
+			margin-top: -0rem;
+			transition: all 10s !important;
+		}
+
+		.dropdown:hover .dropdown-menu {
+			display: block;
+			margin-top: 1.5rem;
+		}
+	}
+
+
+	.navigation_right {
+		display: flex;
+
+		@include media_lg {
+			order: 1 !important;
+			margin-left: auto !important;
+			align-items: center !important;
+		}
+
+		.search {
+
+			border-radius: 3rem;
+			margin-left: 2rem;
+
+			@include media_xl {
+				display: none;
+			}
+
+
+			@include media_lg {
+				display: block;
+			}
+
+			@include media_md {
+				display: none;
+			}
+
+			input, button {
+				border: none;
+				border-radius: 3rem;
+				box-shadow: none;
+			}
+
+			input {
+				width: 10rem;
+			}
+
+
+			button {
+				margin-left: -1.3rem;
+				margin-right: 0rem;
+			}
+		}
+
+
+		button {
+			background-color: white;
+			border-radius: 50%;
+			color: #4E4E4E;
+			padding: .6rem .8rem;
+			margin: 0rem .9rem;
+
+			.icon {
+				font-size: 1.3rem;
+			}
+		}
+
+
+		.tools {
+
+
+			.wishlist {
+				@include media_sm {
+					display: none;
+				}
+			}
+
+
+			.sign_in {
+				position: relative;
+				font-size: 1.3rem;
+				border-radius: 2rem;
+				color: white;
+				background-color: $blue;
+				border: none;
+				padding: .4rem 1.5rem;
+				padding-bottom: .7rem;
+				overflow: hidden;
+
+				@media (max-width: 430px) {
+					display: none;
+				}
+
+				span {
+					position: absolute;
+					left: 0;
+					top: 0;
+					background-color: $lightBlue;
+					opacity: 40%;
+					height: 100%;
+					width: 0%;
+					transition: all .5s cubic-bezier(0.52, 1.64, 0.37, 0.66);
+				}
+
+
+				&:hover span{
+					width: 100%;
+				}
+			}
+
+		}
+
+	}
+
+
+	.navbar-toggler {
+
+		@include media_lg {
+			order: 2 !important;
+		}
+	}
+
+
+	@include media_lg {
+
+		.navbar-toggler {
+			order: 1;
+		}
+
+		.navigation_middle {
+			order: 2;
+		}
+	}
+
+}
+
+

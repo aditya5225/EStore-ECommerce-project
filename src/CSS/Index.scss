@@ -1,0 +1,85 @@
+
+$blue: #2577FD;
+$lightBlue: #C7ECFF;
+$red: #FF003C;
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+
+.bor {
+	border: solid red 1px;
+}
+
+
+.container-fluid {
+	padding: 0px;
+}
+
+
+.row {
+	margin: 0px;
+}
+
+
+p {
+	margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin media_sm {
+	@media (max-width: 575.98px) { @content; }
+}
+
+@mixin media_md {
+	@media (max-width: 767.98px) { @content; }
+}
+
+@mixin media_lg {
+	@media (max-width: 991.98px) { @content; }
+}
+
+@mixin media_xl {
+	@media (max-width: 1199.98px) { @content; }
+}
+
+
+
+/*
+html {
+
+@include media_sm {
+	font-size: 20% !important;
+}
+
+@include media_md {
+	font-size: 40% !important;
+}
+
+@include media_lg {
+	font-size: 60% !important;
+}
+
+@include media_xl {
+	font-size: 80% !important;
+}
+
+}
+*/

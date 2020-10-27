@@ -1,0 +1,98 @@
+
+@import './Index.scss';
+
+
+.Banner1 {
+	background-color: $lightBlue;
+
+	.image {
+		display: flex;
+		align-items: flex-end;
+
+		@include media_md {
+			display: none;
+		}
+	}
+
+	.text {
+		display: flex;
+		align-items: center;
+
+		h3 {
+			font-size: 3vw;
+			margin: 0px;
+			color: $blue;
+
+			@include media_md {
+				font-size: 5vw;
+			}
+
+			@include media_sm {
+				font-size: 7vw;
+			}
+		}
+
+		h1 {
+			font-size: 7.5vw;
+			margin: 0px;
+
+			@include media_md {
+				font-size: 8vw;
+			}
+
+			@include media_sm {
+				font-size: 10vw;
+			}
+		}
+
+		p {
+			font-size: 2vw;
+			margin: 0px;
+
+			@include media_sm {
+				font-size: 3vw;
+			}
+		}
+
+		button {			
+			position: relative;
+			font-size: 1.7vw;
+			border-radius: 30rem;
+			color: white;
+			background-color: $blue;
+			border: none;
+			padding: .8vw 2.8vw;
+			padding-bottom: 1vw;
+			overflow: hidden;
+			margin-top: 3vw;
+
+			span {
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: $lightBlue;
+				opacity: 40%;
+				height: 100%;
+				width: 0%;
+				transition: all .5s cubic-bezier(0.52, 1.64, 0.37, 0.66);
+			}
+
+
+			&:hover span{
+				width: 100%;
+			}
+
+
+			@include media_md {
+				font-size: 4vw;
+				padding: 1vw 4vw;
+				padding-bottom: 1.8vw;
+			}
+		}
+
+
+		@include media_md {
+			padding: 7vw 20vw;
+		}
+	}
+}

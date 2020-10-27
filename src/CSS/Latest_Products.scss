@@ -1,0 +1,23 @@
+
+@import './Index.scss';
+
+
+.Latest_Products {
+
+	margin: 3rem 0vw 2rem;
+	padding: 0vw 6vw !important;
+	text-align: center;
+
+
+	.title {
+
+		h1 {
+
+			font-size: 4vw;
+		}	
+	}
+
+	.cards {
+		margin: 2vw 0vw;
+	}
+}

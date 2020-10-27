@@ -1,0 +1,103 @@
+
+@import './Index.scss';
+
+
+.Category_Card {
+
+	padding: 0;
+	margin-bottom: 2.5vw;
+
+	.image {
+		padding: 0;
+
+		img {
+			width: 100%;
+		}
+	}
+
+
+	@include media_lg {
+		padding: 0 !important;
+	}
+
+	
+
+	.text {
+
+		text-align: left;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(-15%, -60%);
+
+
+		h1 {
+			margin-bottom: -1vw;
+			font-size: 2.5vw;
+
+			@include media_xl {
+				font-size: 4vw;
+			}
+
+
+			@include media_lg {
+				font-size: 8vw;
+			}
+
+
+			@media (max-width: 300px) {
+				margin-bottom: -7vw;
+				
+			}
+
+
+			@media (max-width: 200px) {
+				margin-bottom: -15vw;
+			}
+
+
+			@media (max-width: 170px) {
+				margin-bottom: -19vw;
+			}
+		}
+
+
+		button {
+			font-size: 1.2vw;
+			font-weight: bold;
+			background-color: #FFCE25;
+			border: none;
+			border-radius: 50px;
+			padding: .7vw 1.5vw;
+
+			@include media_xl {
+				font-size: 2.2vw;
+			}
+
+
+			@include media_lg {
+				font-size: 3.5vw;
+			}
+		}
+
+
+		p {
+			color: $blue;
+			font-weight: bold;
+			font-size: 1.2vw;
+			margin-top: -1vw;
+
+
+			@include media_xl {
+				font-size: 2vw;
+				margin-top: -1.5vw;
+			}
+
+
+			@include media_lg {
+				font-size: 3vw;
+				margin-top: -2vw;
+			}
+		}
+	}
+}

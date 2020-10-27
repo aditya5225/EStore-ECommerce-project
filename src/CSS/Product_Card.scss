@@ -1,0 +1,79 @@
+
+@import './Index.scss';
+
+
+.Product_Card {
+	text-align: center;
+	margin: 2vw 0vw;
+
+	.card_image {
+
+		div {
+			padding: 0 !important;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+
+	.card_body {
+
+		padding: 2vw 0vw 3vw;
+
+		@include media_md {
+			padding: 5vw 0vw 8vw;
+		}
+
+		@include media_sm {
+			padding: 4vw 0vw 13vw;
+		}
+
+		.icon {
+			font-size: 2vw;
+
+			@include media_lg {
+				font-size: 2.5vw;
+			}
+
+
+			@include media_md {
+				font-size: 4.5vw;
+			}
+		}
+
+		h1 {
+			font-size: 1.5vw;
+			margin-top: 1.3vw !important;
+
+			@include media_lg {
+				font-size: 2.5vw;
+			}
+
+			@include media_md {
+				font-size: 5vw;
+			}
+		}
+
+		p {
+			font-size: 1.3vw;
+			font-weight: bold;
+
+
+			@include media_lg {
+				font-size: 2.5vw;
+			}
+
+			@include media_md {
+				font-size: 5vw;
+			}
+		}
+
+		span {
+			margin-left: 1vw;
+			color: $red;
+			text-decoration: line-through;
+		}
+	}
+}
